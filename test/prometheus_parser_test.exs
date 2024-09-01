@@ -54,7 +54,6 @@ defmodule PrometheusParserTest do
     assert parse("720_pending_messages 0") ==
              {:error, "Unsupported syntax: \"720_pending_messages 0\""}
   end
-  
 
   test "parse entry without key and value" do
     assert parse("pending_messages 0") ==
